@@ -4,28 +4,78 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car Shop</title>
-  <style>
-    table, tr, th, td {
-      border: 2px solid;
-    }
-  </style>
+  <title>Form Example</title>
 </head>
 <body>
-  <h1>Form</h1>
+  <h1>Form Example</h1>
   <form>
-    <div>
-      <label for="name">Name</label>
-    <input autofocus id ="name"type="text">
-    </div>
-    <input type="button" value="OK">
-    <input type="checkbox" name="" id="">
-    <input type="color" name="" id="">
-    <input type="date" name="" id="">
-    <input type="email" name="" id="">
-    <input type="number" name="" id="">
-    <input type="submit" value="Submit">
-    <input type="file" name="" id="">
+    <fieldset>
+      <legend>Личная Информация</legend>
+      <div>
+        <label for="name">Имя</label>
+      <input autofocus id ="name"type="text">
+      </div>
+      <div>
+        <label for="surname">Фамилия</label>
+      <input autofocus id ="surname"type="text">
+      </div>
+      <div>
+        <label for="birthday">День Рождения</label>
+      <input type="date" name="birthday" id="birthday">
+      </div>
+      <div>
+        <label for="male">Male</label>
+      <input type="radio" id="male" name = "gender">
+      </div>
+      <div>
+        <label for="female">Female</label>
+      <input type="radio" id="female" name = "gender">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Адресные Данные</legend>
+      <label for="name">Город</label>
+      <select name="" id="">
+      <option value="">Almaty</option>
+      <option value="">Astana</option>
+      <option value="">Shymkent</option>
+      </select>
+      <div>
+        <label for="street">Улица</label>
+      <input autofocus id ="street"type="text">
+      </div>
+      <div>
+        <label for="number">Номер Дома</label>
+      <input autofocus id ="number of house"type="text">
+      </div>
+      <div>
+        <label for="apartment">Квартира</label>
+        <input autofocus id ="apartment" type="text">
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Контактные Данные</legend>
+      <div>
+        <label for="mobile">Мобильный</label>
+        <input autofocus id ="mobile" type="text">
+      </div>
+      <div>
+        <label for="work">Рабочий</label>
+        <input autofocus id ="work" type="text">
+      </div>
+      <div>
+        <label for="home">Домашний</label>
+        <input autofocus id ="home" type="text">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <input type="submit" value="Cancel">
+        <input type="submit" value="Ok">
+      </div>
+    </fieldset>
   </form>
 </body>
 </html>
